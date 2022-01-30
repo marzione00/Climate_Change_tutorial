@@ -1,0 +1,183 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+
+\mode<presentation>
+{
+  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{beaver} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+\usepackage{pifont}
+\usepackage[bookmarks]{hyperref}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{braket}
+\usepackage{amsmath,amsfonts,amsthm,bm}
+\addbibresource{bibliography.bib}
+\newtheorem*{remark}{Remark}
+\usepackage[italian]{babel}
+\usepackage[utf8x]{inputenc}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro_pict.png}}
+\title[Laboratorio R]{Cambiamento Climatico}
+\subtitle{Laboratorio R}
+\author{Marzio De Corato }
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\vspace{+6.5 cm}  \titlepage
+\end{frame}
+
+\usebackgroundtemplate{ } 
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%\setcounter{tocdepth}{1}
+%\begin{center}
+%  \tableofcontents
+%\end{center}
+%\end{frame}
+
+
+
+
+\section{Statistical Mechanics}
+
+
+\begin{frame}{Definizioni}
+\begin{itemize}
+\item Che cos'è il clima ? 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Definizioni}
+\begin{itemize}
+\item Che cos'è il clima ? \textit{Sintesi statistica dei parametri atmosferici (temperatura, precipitazioni, umidità, pressione, venti) che interessano un
+territorio per un periodo di tempo sufficientemente lungo} \cite{ispra}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Definizioni}
+\begin{itemize}
+\item Che cos'è il cambiamento climatico ? 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definizioni}
+\begin{itemize}
+\item Che cos'è il cambiamento climatico ?  \textit{Qualsiasi cambiamento di clima attribuito direttamente o indirettamente ad attività umane, il quale altera la composizione dell'atmosfera mondiale e si aggiunge alla variabilità naturale del clima osservata in periodi di tempo comparabili} \cite{ispra}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Approccio quantitativo}
+\begin{itemize}
+\item Come lo misuriamo ? Come lo dimostriamo ? 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approccio quantitativo}
+\begin{itemize}
+\item Come lo misuriamo ? Come lo dimostriamo ? 
+\begin{itemize}
+\item \textit{Misurazione} $\rightarrow$ \textit{serie storica (serie di osservazioni organizzate/rappresentate in ordine temporale)}
+\item \textit{Significatività }
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Dati}
+\begin{itemize}
+\item Quali dati utilizziamo ?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approccio quantitativo}
+\begin{itemize}
+\item Quali dati utilizziamo ? 
+\begin{itemize}
+\item Temperatura 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Approccio quantitativo}
+\begin{itemize}
+\item Quali dati utilizziamo ? 
+\begin{itemize}
+\item Temperatura  $\rightarrow$ Problema: le serie storiche affidabili di una misurazione diretta della temperatura sono disponbili dal 1880 \cite{1880}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approccio quantitativo}
+\begin{itemize}
+\item Quali dati utilizziamo ? 
+\begin{itemize}
+\item Temperatura  $\rightarrow$ Problema: le serie storiche affidabili di una misurazione diretta della temperatura sono disponbili dal 1880 \cite{1880}
+\item SOLUZIONE: Uso delle misurazioni indirette: anelli di crescita degli alberi, carotaggi dei ghiacciai...
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Approccio quantitativo}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth ]{Pic/1920px-Greenhouse-effect-t2.png}
+\caption{Immagine presa da \cite{wiki}}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Approccio quantitativo}
+\begin{itemize}
+\item Quali dati utilizziamo ? 
+\begin{itemize}
+\item Temperatura  $\rightarrow$ Problema: le serie storiche affidabili di una misurazione diretta della temperatura sono disponbili dal 1880 \cite{1880}
+\item SOLUZIONE: Uso delle misurazioni indirette: anelli di crescita degli alberi, carotaggi dei ghiacciai...
+\item Concentrazione CO$_{2}$, CH$_{4}$: le serie storiche di una misurazione diretta sono molto limitate perchè la tecnologia richiesta non è banale (e.g spettroscopia infrarossa). 
+\item SOLUZIONE: carotaggi dei ghiacciai....
+\item N.B vengono considerati anche altri gas
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ricerca dei dati}
+\begin{itemize}
+\item Su quali fonti cercare le informazioni ? 
+\item Come essere sicuri che le fonti siano attendibili ? 
+\item Le fonti forniscono i raw data ? 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ricerca dei dati}
+\begin{itemize}
+\item Dati forniti da EPICA: European Project for Ice Coring in Antarctica (1996-2005)
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\printbibliography
+\end{frame}
+
+
+
+
+
+\end{document}
