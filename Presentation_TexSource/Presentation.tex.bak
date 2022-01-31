@@ -166,8 +166,148 @@ territorio per un periodo di tempo sufficientemente lungo} \cite{ispra}
 \begin{itemize}
 \item Dati forniti da EPICA: European Project for Ice Coring in Antarctica (1996-2005)
 \end{itemize}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth ]{Pic/EPICAC.png}
+\caption{Immagine presa da \cite{EPICAC}}
+\end{center}
+\end{figure}
+
+\end{frame}
 
 
+\begin{frame}{Ricerca dei dati}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth ]{Pic/Carotaggi.jpg}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+EPICA DOME C
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/Overview.png}
+\caption{Immagine presa da \cite{overview}}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Programma esercitazione}
+\begin{center}
+Programma dell'esercitazione
+\end{center}
+\begin{itemize}
+\item Ottenere i dati mostrati in precedenza
+\item Analisi statistica delle serie storiche CO$_{2}$ e CH$_4$ e loro visualizzazione
+\item Confronto con i valori attuali 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Come cercare i dati ? 
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/Nature.png}
+\caption{Immagine presa da \cite{overview}}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Data retrival}
+\begin{itemize}
+\item Scaricare i dati dal sito del \textit{National Oceanic and Atmospheric Administration} \href{https://www.ncei.noaa.gov/access/paleo-search/}{\beamergotobutton{Link}}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Come cercare i dati ? 
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/NOAA_1.png}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Come cercare i dati ? 
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/NOAA_2.png}
+\end{center}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Come cercare i dati ? 
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/CO2_data.png}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Come cercare i dati ? 
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/NOAA_3.png}
+\end{center}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Come cercare i dati ? 
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/NOAA_4.png}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Ricerca dei dati}
+\begin{center}
+Copiare in un txt separato il seguente campo (se ci sono spazi nelle label rimuoverli)
+\end{center}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/CH4_DATA.png}
+\end{center}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Caricamento e analisi dei dati}
+\begin{center}
+Fare riferimento al notebook 
+\end{center}
 \end{frame}
 
 
