@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  2 FEB 2022 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  2 FEB 2022 17:15
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1350,7 +1350,7 @@ Overfull \vbox (79.53903pt too high) detected at line 226
  <./Pic/Nature.png>] [20
 
 ]
-<Pic/NOAA_1.png, id=193, 741.52031pt x 309.40594pt>
+<Pic/NOAA_1.png, id=194, 741.52031pt x 309.40594pt>
 File: Pic/NOAA_1.png Graphic file (type png)
 <use Pic/NOAA_1.png>
 Package pdftex.def Info: Pic/NOAA_1.png  used on input line 247.
@@ -1358,7 +1358,7 @@ Package pdftex.def Info: Pic/NOAA_1.png  used on input line 247.
  [21
 
  <./Pic/NOAA_1.png>]
-<Pic/NOAA_2.png, id=200, 757.32938pt x 190.46156pt>
+<Pic/NOAA_2.png, id=201, 757.32938pt x 190.46156pt>
 File: Pic/NOAA_2.png Graphic file (type png)
 <use Pic/NOAA_2.png>
 Package pdftex.def Info: Pic/NOAA_2.png  used on input line 258.
@@ -1366,7 +1366,7 @@ Package pdftex.def Info: Pic/NOAA_2.png  used on input line 258.
  [22
 
  <./Pic/NOAA_2.png>]
-<Pic/CO2_data.png, id=208, 603.0028pt x 412.54124pt>
+<Pic/CO2_data.png, id=209, 603.0028pt x 412.54124pt>
 File: Pic/CO2_data.png Graphic file (type png)
 <use Pic/CO2_data.png>
 Package pdftex.def Info: Pic/CO2_data.png  used on input line 270.
@@ -1378,7 +1378,7 @@ Overfull \vbox (34.70467pt too high) detected at line 270
 [23
 
  <./Pic/CO2_data.png>]
-<Pic/NOAA_3.png, id=216, 738.50906pt x 295.1025pt>
+<Pic/NOAA_3.png, id=217, 738.50906pt x 295.1025pt>
 File: Pic/NOAA_3.png Graphic file (type png)
 <use Pic/NOAA_3.png>
 Package pdftex.def Info: Pic/NOAA_3.png  used on input line 281.
@@ -1386,7 +1386,7 @@ Package pdftex.def Info: Pic/NOAA_3.png  used on input line 281.
  [24
 
  <./Pic/NOAA_3.png>]
-<Pic/NOAA_4.png, id=223, 743.02594pt x 291.33844pt>
+<Pic/NOAA_4.png, id=224, 743.02594pt x 291.33844pt>
 File: Pic/NOAA_4.png Graphic file (type png)
 <use Pic/NOAA_4.png>
 Package pdftex.def Info: Pic/NOAA_4.png  used on input line 293.
@@ -1394,7 +1394,7 @@ Package pdftex.def Info: Pic/NOAA_4.png  used on input line 293.
  [25
 
  <./Pic/NOAA_4.png>]
-<Pic/CH4_DATA.png, id=232, 383.18156pt x 476.53032pt>
+<Pic/CH4_DATA.png, id=233, 383.18156pt x 476.53032pt>
 File: Pic/CH4_DATA.png Graphic file (type png)
 <use Pic/CH4_DATA.png>
 Package pdftex.def Info: Pic/CH4_DATA.png  used on input line 304.
@@ -1407,59 +1407,7 @@ Overfull \vbox (242.57724pt too high) detected at line 304
 
  <./Pic/CH4_DATA.png>] [27
 
-]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 320
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 320
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 320
-[][]
- []
-
-[28
+] [28
 
 ] [29
 
@@ -1481,10 +1429,10 @@ Package logreq Info: Writing requests to 'Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31042 strings out of 478681
- 606059 string characters out of 2854493
+ 31043 strings out of 478681
+ 606068 string characters out of 2854493
  1036011 words of memory out of 3000000
- 48480 multiletter control sequences out of 15000+600000
+ 48481 multiletter control sequences out of 15000+600000
  425397 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1847b,1459s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1494,9 +1442,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (29 pages, 2416847 bytes).
+Output written on Presentation.pdf (29 pages, 2417265 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
+ 312 PDF objects out of 1000 (max. 8388607)
  66 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

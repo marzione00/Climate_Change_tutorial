@@ -3,6 +3,7 @@ title: "CO2 and CH4"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 Caricamento dei dati e delle librerie
@@ -10,6 +11,7 @@ Caricamento dei dati e delle librerie
 ```{r}
 library(ggplot2)
 library(zoo)
+library(stats)
 edc.co2.2008_EXTRACTED <- read.csv("Data/edc-co2-2008_EXTRACTED.txt", sep="")
 edc.ch4.2008_EXTRACTED<- read.csv("Data/edc-ch4-2008_EXTRACTED.txt", sep="")
 temperature<- read.csv("Data/temperature_EXTRACTED.txt", sep="")
@@ -56,7 +58,7 @@ CH4_mean <- mean(CH4$CH4)
 CH4_sd <- sd(CH4$CH4)
 print(c(CH4_mean ,CH4_sd ))
 ```
-
+Non si possono mettere direttamente sullo stesso grafico i dati precedenti perchè non hanno la stessa unità di misura. Conviene sottrarre la media e dividere per la deviazione standard. In questo modo i dati sono direttamente confrontabili perchè adimensionali
 
 ```{r}
 CO2$CO2_scaled <- scale(CO2$CO2 , scale = TRUE)
@@ -94,6 +96,9 @@ scale_y_continuous(name ="CH4 CO2 and T arb. units ") +  scale_x_continuous(name
 
 ```
 
+IMPORTANTE: NON è una pratica scientifica sovrapporre serie temporali, o comunque dati che ci sembrano seguire lo stesso andamento (o l'opposto) e sostenere che data la correlazione vi sia causalità. In questo caso però si ha a disposizione un modello (con relativa validazione speriemntale), quello dell'effetto serra, che spiega da principi primi come l'aumento del CH4 e della CO2 influisca sulla temepratura. Quindi il plot è ampiamente giustificato.
+
+
 Ora analizziamo la situazione attuale 
 
 
@@ -117,4 +122,63 @@ scale_y_continuous(name ="T and CO2 arb. units ") +  scale_x_continuous(name ="A
 
 ```
 
+Invece dei dataframe utilizziamo gli oggetti Time Series (TS)
 
+
+```{r}
+Data <- data.frame(actual_temperature$Temperature_scaled)
+colnames(Data)<- c("Temperature")
+Data_TS <- ts(Data,frequency = 1)
+
+```
+
+```{r}
+plot(Data_TS)
+```
+
+Visualizzazione del trend
+
+
+```{r}
+plot(Data_TS)
+abline(reg=lm(Data_TS ~time(Data_TS)))
+```
+
+Se invece i dati che abbiamo sono mensili al posto che annuali, conviene rimuovere la stagionalità mensile (e.g. ciclo delle stagioni inverno-primavera-estate-autunno)
+
+```{r}
+HadCRUT.5.0.1.0.analysis.summary_series.global.monthly <- read.csv("~/GitHub/Climate_Change_tutorial/Data/HadCRUT.5.0.1.0.analysis.summary_series.global.monthly.csv")
+
+
+
+Month_Temperature_TS<-ts(HadCRUT.5.0.1.0.analysis.summary_series.global.monthly$Anomaly..deg.C.,frequency = 12)
+
+```
+
+```{r}
+plot(Month_Temperature_TS)
+```
+
+La funzione "decopose" decompone la time series in 3 componenti (che riproducono la TS originale se sommate; si può anche suppore che invece le componenti vadano moltiplicate): una periodica, una trend e una casuale. Si può pensare alla terza come all'errore che si ottiene in quest'operazione. 
+
+```{r}
+TS_dec<-decompose(Month_Temperature_TS)
+```
+
+Ecco la componente stagionale per primi 3 anni. Si possono riconoscere le diverse stagioni inverno-primavera-estate-autunno
+
+```{r}
+plot(TS_dec$seasonal[0:36],type = "b")
+```
+
+Ecco il trend, che è la componente che ci interessa 
+
+```{r}
+plot(TS_dec$trend,type = "l")
+```
+
+E infine l'errore: non deve avere periodicità ne trend (deve essere simile al segnale prodotto dalla televisione quando staccate il cavo antenna, un white noise)
+
+```{r}
+plot(TS_dec$random,type = "l")
+```
