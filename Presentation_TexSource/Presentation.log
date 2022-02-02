@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  31 JAN 2022 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  2 FEB 2022 11:58
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1237,7 +1237,7 @@ italian.ldf    on input line 32.
 (C:\Program Files\MiKTeX 2.9\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ) (Presentation.nav)
-Overfull \vbox (77.81525pt too high) detected at line 36
+Overfull \vbox (75.8512pt too high) detected at line 36
  []
 
 <Pic/Intro_pict.png, id=33, 523.9575pt x 349.305pt>
@@ -1407,7 +1407,61 @@ Overfull \vbox (242.57724pt too high) detected at line 304
 
  <./Pic/CH4_DATA.png>] [27
 
-] [28
+]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 320
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 320
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 320
+[][]
+ []
+
+[28
+
+] [29
 
 ]
 \tf@nav=\write7
@@ -1427,25 +1481,22 @@ Package logreq Info: Writing requests to 'Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31048 strings out of 478681
- 606109 string characters out of 2854493
+ 31042 strings out of 478681
+ 606059 string characters out of 2854493
  1036011 words of memory out of 3000000
- 48487 multiletter control sequences out of 15000+600000
+ 48480 multiletter control sequences out of 15000+600000
  425397 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1847b,1459s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation32} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (28 pages, 2414832 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Presentation.pdf (29 pages, 2416847 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 310 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

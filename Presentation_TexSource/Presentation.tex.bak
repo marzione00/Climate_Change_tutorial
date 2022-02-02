@@ -311,6 +311,15 @@ Fare riferimento al notebook
 \end{frame}
 
 
+\begin{frame}{Ricerca dei dati}
+\begin{item}
+\item Scaricare i dati della concentrazione della concentrazione di CO2 dal 1959 dal sito NOAA
+ \href{https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.txt}{\beamergotobutton{Link}}
+\item Fare lo stesso con la temperatura  \href{https://www.ncdc.noaa.gov/cag/global/time-series/globe/land_ocean/1/12/1959-2021}{\beamergotobutton{Link}}
+\end{item}
+\end{frame}
+
+
 \begin{frame}[t,allowframebreaks]
 \frametitle{Bibliography}
 \printbibliography
