@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  2 FEB 2022 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  2 FEB 2022 17:25
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1240,7 +1240,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 Overfull \vbox (75.8512pt too high) detected at line 36
  []
 
-<Pic/Intro_pict.png, id=33, 523.9575pt x 349.305pt>
+<Pic/Intro_pict.png, id=37, 523.9575pt x 349.305pt>
 File: Pic/Intro_pict.png Graphic file (type png)
 <use Pic/Intro_pict.png>
 Package pdftex.def Info: Pic/Intro_pict.png  used on input line 36.
@@ -1262,19 +1262,19 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ] [6
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
  (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 96.
+ut line 95.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1291,11 +1291,11 @@ thkerncmss.
 ] [11
 
 ]
-<Pic/1920px-Greenhouse-effect-t2.png, id=120, 1927.2pt x 1168.365pt>
+<Pic/1920px-Greenhouse-effect-t2.png, id=124, 1927.2pt x 1168.365pt>
 File: Pic/1920px-Greenhouse-effect-t2.png Graphic file (type png)
 <use Pic/1920px-Greenhouse-effect-t2.png>
 Package pdftex.def Info: Pic/1920px-Greenhouse-effect-t2.png  used on input lin
-e 142.
+e 141.
 (pdftex.def)             Requested size: 239.60567pt x 145.26083pt.
  [12
 
@@ -1305,30 +1305,30 @@ e 142.
 [14
 
 ]
-<Pic/EPICAC.png, id=144, 704.6325pt x 472.76625pt>
+<Pic/EPICAC.png, id=148, 704.6325pt x 472.76625pt>
 File: Pic/EPICAC.png Graphic file (type png)
 <use Pic/EPICAC.png>
-Package pdftex.def Info: Pic/EPICAC.png  used on input line 176.
+Package pdftex.def Info: Pic/EPICAC.png  used on input line 178.
 (pdftex.def)             Requested size: 239.60567pt x 160.76004pt.
 
-Overfull \vbox (0.72696pt too high) detected at line 176
+Overfull \vbox (0.72696pt too high) detected at line 178
  []
 
 [15
 
  <./Pic/EPICAC.png>]
-<Pic/Carotaggi.jpg, id=154, 662.475pt x 331.2375pt>
+<Pic/Carotaggi.jpg, id=158, 662.475pt x 331.2375pt>
 File: Pic/Carotaggi.jpg Graphic file (type jpg)
 <use Pic/Carotaggi.jpg>
-Package pdftex.def Info: Pic/Carotaggi.jpg  used on input line 186.
+Package pdftex.def Info: Pic/Carotaggi.jpg  used on input line 188.
 (pdftex.def)             Requested size: 239.60567pt x 119.80138pt.
  [16
 
  <./Pic/Carotaggi.jpg>]
-<Pic/Overview.png, id=161, 1023.825pt x 438.8897pt>
+<Pic/Overview.png, id=165, 1023.825pt x 438.8897pt>
 File: Pic/Overview.png Graphic file (type png)
 <use Pic/Overview.png>
-Package pdftex.def Info: Pic/Overview.png  used on input line 200.
+Package pdftex.def Info: Pic/Overview.png  used on input line 202.
 (pdftex.def)             Requested size: 342.2953pt x 146.72926pt.
  [17
 
@@ -1336,13 +1336,13 @@ Package pdftex.def Info: Pic/Overview.png  used on input line 200.
 [18
 
 ]
-<Pic/Nature.png, id=177, 543.53062pt x 395.22656pt>
+<Pic/Nature.png, id=181, 543.53062pt x 395.22656pt>
 File: Pic/Nature.png Graphic file (type png)
 <use Pic/Nature.png>
-Package pdftex.def Info: Pic/Nature.png  used on input line 226.
+Package pdftex.def Info: Pic/Nature.png  used on input line 228.
 (pdftex.def)             Requested size: 342.2953pt x 248.9096pt.
 
-Overfull \vbox (79.53903pt too high) detected at line 226
+Overfull \vbox (79.53903pt too high) detected at line 228
  []
 
 [19
@@ -1350,57 +1350,57 @@ Overfull \vbox (79.53903pt too high) detected at line 226
  <./Pic/Nature.png>] [20
 
 ]
-<Pic/NOAA_1.png, id=194, 741.52031pt x 309.40594pt>
+<Pic/NOAA_1.png, id=198, 741.52031pt x 309.40594pt>
 File: Pic/NOAA_1.png Graphic file (type png)
 <use Pic/NOAA_1.png>
-Package pdftex.def Info: Pic/NOAA_1.png  used on input line 247.
+Package pdftex.def Info: Pic/NOAA_1.png  used on input line 249.
 (pdftex.def)             Requested size: 342.2953pt x 142.82889pt.
  [21
 
  <./Pic/NOAA_1.png>]
-<Pic/NOAA_2.png, id=201, 757.32938pt x 190.46156pt>
+<Pic/NOAA_2.png, id=205, 757.32938pt x 190.46156pt>
 File: Pic/NOAA_2.png Graphic file (type png)
 <use Pic/NOAA_2.png>
-Package pdftex.def Info: Pic/NOAA_2.png  used on input line 258.
+Package pdftex.def Info: Pic/NOAA_2.png  used on input line 260.
 (pdftex.def)             Requested size: 342.2953pt x 86.0847pt.
  [22
 
  <./Pic/NOAA_2.png>]
-<Pic/CO2_data.png, id=209, 603.0028pt x 412.54124pt>
+<Pic/CO2_data.png, id=213, 603.0028pt x 412.54124pt>
 File: Pic/CO2_data.png Graphic file (type png)
 <use Pic/CO2_data.png>
-Package pdftex.def Info: Pic/CO2_data.png  used on input line 270.
+Package pdftex.def Info: Pic/CO2_data.png  used on input line 272.
 (pdftex.def)             Requested size: 342.2953pt x 234.17525pt.
 
-Overfull \vbox (34.70467pt too high) detected at line 270
+Overfull \vbox (34.70467pt too high) detected at line 272
  []
 
 [23
 
  <./Pic/CO2_data.png>]
-<Pic/NOAA_3.png, id=217, 738.50906pt x 295.1025pt>
+<Pic/NOAA_3.png, id=221, 738.50906pt x 295.1025pt>
 File: Pic/NOAA_3.png Graphic file (type png)
 <use Pic/NOAA_3.png>
-Package pdftex.def Info: Pic/NOAA_3.png  used on input line 281.
+Package pdftex.def Info: Pic/NOAA_3.png  used on input line 283.
 (pdftex.def)             Requested size: 342.2953pt x 136.77544pt.
  [24
 
  <./Pic/NOAA_3.png>]
-<Pic/NOAA_4.png, id=224, 743.02594pt x 291.33844pt>
+<Pic/NOAA_4.png, id=228, 743.02594pt x 291.33844pt>
 File: Pic/NOAA_4.png Graphic file (type png)
 <use Pic/NOAA_4.png>
-Package pdftex.def Info: Pic/NOAA_4.png  used on input line 293.
+Package pdftex.def Info: Pic/NOAA_4.png  used on input line 295.
 (pdftex.def)             Requested size: 342.2953pt x 134.21735pt.
  [25
 
  <./Pic/NOAA_4.png>]
-<Pic/CH4_DATA.png, id=233, 383.18156pt x 476.53032pt>
+<Pic/CH4_DATA.png, id=237, 383.18156pt x 476.53032pt>
 File: Pic/CH4_DATA.png Graphic file (type png)
 <use Pic/CH4_DATA.png>
-Package pdftex.def Info: Pic/CH4_DATA.png  used on input line 304.
+Package pdftex.def Info: Pic/CH4_DATA.png  used on input line 306.
 (pdftex.def)             Requested size: 342.2953pt x 425.71033pt.
 
-Overfull \vbox (242.57724pt too high) detected at line 304
+Overfull \vbox (242.57724pt too high) detected at line 306
  []
 
 [26
@@ -1423,16 +1423,16 @@ Overfull \vbox (242.57724pt too high) detected at line 304
 
  (Presentation.aux)
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 8661CEC43F69D11CBDE893A6FA2E9659;322.
+(rerunfilecheck)             Checksum: 516F28C4BF2DA201EC1E207A042F0684;403.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31043 strings out of 478681
- 606068 string characters out of 2854493
+ 31048 strings out of 478681
+ 606114 string characters out of 2854493
  1036011 words of memory out of 3000000
- 48481 multiletter control sequences out of 15000+600000
+ 48485 multiletter control sequences out of 15000+600000
  425397 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1847b,1459s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1442,9 +1442,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (29 pages, 2417265 bytes).
+Output written on Presentation.pdf (29 pages, 2417726 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,4 +2,6 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Statistical Mechanics}{2}{0}{1}
+\beamer@sectionintoc {1}{Introduzione}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Ricerca dei dati}{14}{0}{2}
