@@ -1,10 +1,13 @@
 ---
-title: "CO2 and CH4"
+title: "Cambiamento climatico"
 output:
   html_document:
     df_print: paged
   pdf_document: default
 ---
+
+## CO2,CH4 e Temperatura
+
 
 Caricamento dei dati e delle librerie
 
@@ -96,7 +99,7 @@ scale_y_continuous(name ="CH4 CO2 and T arb. units ") +  scale_x_continuous(name
 
 ```
 
-IMPORTANTE: NON è una pratica scientifica sovrapporre serie temporali, o comunque dati che ci sembrano seguire lo stesso andamento (o l'opposto) e sostenere che data la correlazione vi sia causalità. In questo caso però si ha a disposizione un modello (con relativa validazione speriemntale), quello dell'effetto serra, che spiega da principi primi come l'aumento del CH4 e della CO2 influisca sulla temepratura. Quindi il plot è ampiamente giustificato.
+IMPORTANTE: NON è una pratica scientifica sovrapporre serie temporali, o comunque dati che ci sembrano seguire lo stesso andamento (o l'opposto) e sostenere che data la correlazione vi sia causalità. In questo caso però si ha a disposizione un modello (con relativa validazione sperimentale), quello dell'effetto serra, che spiega da principi primi come l'aumento del CH4 e della CO2 influisca sulla temperatura. Quindi il plot è ampiamente giustificato.
 
 
 Ora analizziamo la situazione attuale 
@@ -182,3 +185,50 @@ E infine l'errore: non deve avere periodicità ne trend (deve essere simile al s
 ```{r}
 plot(TS_dec$random,type = "l")
 ```
+
+
+
+Come posso testare se siamo davvero in presenza di una serie storica completamente casuale (white noise) oppure se vi è una certa correlazione fra i dati ? Per esempio guardo l'autocorrelazione 
+
+
+![Autocorrelation](Pic/Autocorrelation.png)
+
+
+```{r}
+acf(na.omit(TS_dec$random), lag.max = 1000)
+```
+
+Le linee blu indicano il livello per cui l'autocorrelazione è significativa, come si può dunque notare l'errore non è completamente causale. Questo vuol dire che manca qualcosa nel modello che abbiamo usato (la stagionalità precedente). Nell'ambito delle serie storiche ci sono dei modelli appositi per effettuare un fit....(magari ne vedremo un accenno nelle prossime lezioni)
+
+
+# AMOC (Capovolgimento meridionale della circolazione atlantica)
+
+Usiamo i dati di Caesar et al. 2021
+
+```{r}
+library(aTSA)
+library(funtimes)
+AMOC <- read.csv("~/GitHub/Climate_Change_tutorial/Data/AMOC.csv", sep=";")
+colnames(AMOC) <- c("Year","AMOC","lower","upper")
+```
+
+
+```{r}
+AMOC_TS <- ts(AMOC$AMOC,frequency=1)
+plot(AMOC_TS)
+```
+
+```{r}
+notrend_test(AMOC_TS)
+linear.model_FIRST <- lm(AMOC ~ Year,data = AMOC[0:70,]) 
+summary(linear.model_FIRST)
+linear.model_SECOND <- lm(AMOC ~ Year,data = AMOC[70:146,]) 
+summary(linear.model_SECOND)
+```
+
+
+
+
+
+
+
