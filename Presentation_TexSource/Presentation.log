@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  2 FEB 2022 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  4 FEB 2022 10:31
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1409,7 +1409,39 @@ Overfull \vbox (242.57724pt too high) detected at line 306
 
 ] [28
 
-] [29
+]
+<Pic/AMOC_graphic.png, id=260, 592.614pt x 682.2288pt>
+File: Pic/AMOC_graphic.png Graphic file (type png)
+<use Pic/AMOC_graphic.png>
+Package pdftex.def Info: Pic/AMOC_graphic.png  used on input line 334.
+(pdftex.def)             Requested size: 171.14764pt x 197.0293pt.
+ [29
+
+ <./Pic/AMOC_graphic.png>]
+<Pic/AMOC_nature_1.png, id=270, 450.18187pt x 248.42813pt>
+File: Pic/AMOC_nature_1.png Graphic file (type png)
+<use Pic/AMOC_nature_1.png>
+Package pdftex.def Info: Pic/AMOC_nature_1.png  used on input line 348.
+(pdftex.def)             Requested size: 171.14764pt x 94.44536pt.
+<Pic/AMOC_nature_2.png, id=271, 369.63094pt x 114.4275pt>
+File: Pic/AMOC_nature_2.png Graphic file (type png)
+<use Pic/AMOC_nature_2.png>
+Package pdftex.def Info: Pic/AMOC_nature_2.png  used on input line 348.
+(pdftex.def)             Requested size: 171.14764pt x 52.98299pt.
+<Pic/AMOC_nature_3.png, id=272, 363.60844pt x 211.54031pt>
+File: Pic/AMOC_nature_3.png Graphic file (type png)
+<use Pic/AMOC_nature_3.png>
+Package pdftex.def Info: Pic/AMOC_nature_3.png  used on input line 348.
+(pdftex.def)             Requested size: 171.14764pt x 99.57243pt.
+ [30
+
+ <./Pic/AMOC_nature_1.png> <./Pic/AMOC_nature_2.png> <./Pic/AMOC_nature_3.png>]
+ [31
+
+]
+[32
+
+] [33
 
 ]
 \tf@nav=\write7
@@ -1429,10 +1461,10 @@ Package logreq Info: Writing requests to 'Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31048 strings out of 478681
- 606114 string characters out of 2854493
- 1036011 words of memory out of 3000000
- 48485 multiletter control sequences out of 15000+600000
+ 31096 strings out of 478681
+ 607057 string characters out of 2854493
+ 1038050 words of memory out of 3000000
+ 48520 multiletter control sequences out of 15000+600000
  425397 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1847b,1459s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1442,9 +1474,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (29 pages, 2417726 bytes).
+Output written on Presentation.pdf (33 pages, 2724654 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

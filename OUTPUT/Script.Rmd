@@ -1,0 +1,234 @@
+---
+title: "Cambiamento climatico"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+## CO2,CH4 e Temperatura
+
+
+Caricamento dei dati e delle librerie
+
+```{r}
+library(ggplot2)
+library(zoo)
+library(stats)
+edc.co2.2008_EXTRACTED <- read.csv("Data/edc-co2-2008_EXTRACTED.txt", sep="")
+edc.ch4.2008_EXTRACTED<- read.csv("Data/edc-ch4-2008_EXTRACTED.txt", sep="")
+temperature<- read.csv("Data/temperature_EXTRACTED.txt", sep="")
+
+```
+
+Creazione di un dataframe con dei nomi diversi per le colonne
+
+```{r}
+CO2 <- data.frame(edc.co2.2008_EXTRACTED$Age, edc.co2.2008_EXTRACTED$CO2)
+CH4 <- data.frame(edc.ch4.2008_EXTRACTED$GasAge, edc.ch4.2008_EXTRACTED$CH4mean)
+Temp <- data.frame(temperature$Age , temperature$Temperature)
+colnames(CO2)<- c("Age","CO2")
+colnames(CH4)<- c("Age","CH4")
+colnames(Temp)<- c("Age","Temperature")
+```
+
+Creazione del grafico
+
+```{r}
+ggplot(data = CO2, aes(x = Age, y = CO2)) + geom_line(colour='red') + geom_point(colour='red')  + 
+scale_y_continuous(name ="CO2 (ppm)") +  scale_x_continuous(name ="Age (yrBP)") + theme_bw()
+
+```
+```{r}
+ggplot(data = CH4, aes(x = Age, y = CH4)) + geom_line(colour='blue') + geom_point(colour='blue')  + 
+scale_y_continuous(name ="CH4 (ppb)") +  scale_x_continuous(name ="Age (yrBP)") + theme_bw()
+
+```
+
+
+Calcolo della media e della devizione standard. La concentrazione attuale di CO2 è di 412 ppm , mentre di CH4 1879 ppb (NOAA)
+
+```{r}
+
+CO2_mean <- mean(CO2$CO2)
+Co2_sd <- sd(CO2$CO2)
+print(c(CO2_mean,Co2_sd))
+```
+
+```{r}
+
+CH4_mean <- mean(CH4$CH4)
+CH4_sd <- sd(CH4$CH4)
+print(c(CH4_mean ,CH4_sd ))
+```
+Non si possono mettere direttamente sullo stesso grafico i dati precedenti perchè non hanno la stessa unità di misura. Conviene sottrarre la media e dividere per la deviazione standard. In questo modo i dati sono direttamente confrontabili perchè adimensionali
+
+```{r}
+CO2$CO2_scaled <- scale(CO2$CO2 , scale = TRUE)
+CH4$CH4_scaled <- scale(CH4$CH4 , scale = TRUE)
+Temp$Temperature_scaled<- scale(Temp$Temperature , scale = TRUE)
+```
+
+
+```{r}
+ggplot(data = CO2, aes(x = Age, y = CO2_scaled)) + geom_line(colour='red') + geom_point(colour='red')  + 
+scale_y_continuous(name ="CO2 (ppm)") +  scale_x_continuous(name ="Age (yrBP)") + theme_bw()
+
+```
+
+
+
+```{r}
+ggplot(data = CH4, aes(x = Age, y = CH4_scaled)) + geom_line(colour='blue') + geom_point(colour='blue')  + 
+scale_y_continuous(name ="CH4 (ppb)") +  scale_x_continuous(name ="Age (yrBP)") + theme_bw()
+
+```
+
+
+```{r}
+ggplot(data = Temp, aes(x = Age, y = Temperature)) + geom_line(colour='orange') + geom_point(colour='orange')  + 
+scale_y_continuous(name ="Delta T (C)") +  scale_x_continuous(name ="Age (yrBP)") + theme_bw()
+
+```
+
+
+```{r}
+
+ggplot(data = CH4, aes(x = Age, y = CH4_scaled)) + geom_line(colour='blue') + geom_point(colour='blue')  + 
+scale_y_continuous(name ="CH4 CO2 and T arb. units ") +  scale_x_continuous(name ="Age (yrBP)") + geom_line(data = CO2, aes(x = Age, y = CO2_scaled),colour='red')+ geom_point(data = CO2, aes(x = Age, y = CO2_scaled),colour='red')+ geom_line(data = Temp, aes(x = Age, y = Temperature_scaled),colour='orange')+ geom_point(data = Temp, aes(x = Age, y = Temperature_scaled),colour='orange')+theme_bw()
+
+```
+
+IMPORTANTE: NON è una pratica scientifica sovrapporre serie temporali, o comunque dati che ci sembrano seguire lo stesso andamento (o l'opposto) e sostenere che data la correlazione vi sia causalità. In questo caso però si ha a disposizione un modello (con relativa validazione sperimentale), quello dell'effetto serra, che spiega da principi primi come l'aumento del CH4 e della CO2 influisca sulla temperatura. Quindi il plot è ampiamente giustificato.
+
+
+Ora analizziamo la situazione attuale 
+
+
+```{r}
+actual_CO2 <- read.csv("Data/ACTUALCO2_extracted.txt", sep="")
+actual_temperature <- read.csv("~/GitHub/Climate_Change_tutorial/Data/data.csv")
+colnames(actual_CO2)<- c("Age","CO2")
+colnames(actual_temperature)<- c("Age","Temperature")
+
+```
+
+```{r}
+actual_CO2$CO2_scaled <- scale(actual_CO2$CO2 , scale = TRUE)
+actual_temperature$Temperature_scaled <- scale(actual_temperature$Temperature , scale = TRUE)
+```
+
+```{r}
+
+ggplot(data = actual_CO2, aes(x = Age, y = CO2_scaled)) + geom_line(colour='blue') + geom_point(colour='blue')  + 
+scale_y_continuous(name ="T and CO2 arb. units ") +  scale_x_continuous(name ="Age (yrBP)")+ geom_line(data = actual_temperature, aes(x = Age, y = Temperature_scaled),colour='orange')+ geom_point(data = actual_temperature, aes(x = Age, y = Temperature_scaled),colour='orange')+theme_bw()
+
+```
+
+Invece dei dataframe utilizziamo gli oggetti Time Series (TS)
+
+
+```{r}
+Data <- data.frame(actual_temperature$Temperature_scaled)
+colnames(Data)<- c("Temperature")
+Data_TS <- ts(Data,frequency = 1)
+
+```
+
+```{r}
+plot(Data_TS)
+```
+
+Visualizzazione del trend
+
+
+```{r}
+plot(Data_TS)
+abline(reg=lm(Data_TS ~time(Data_TS)))
+```
+
+Se invece i dati che abbiamo sono mensili al posto che annuali, conviene rimuovere la stagionalità mensile (e.g. ciclo delle stagioni inverno-primavera-estate-autunno)
+
+```{r}
+HadCRUT.5.0.1.0.analysis.summary_series.global.monthly <- read.csv("~/GitHub/Climate_Change_tutorial/Data/HadCRUT.5.0.1.0.analysis.summary_series.global.monthly.csv")
+
+
+
+Month_Temperature_TS<-ts(HadCRUT.5.0.1.0.analysis.summary_series.global.monthly$Anomaly..deg.C.,frequency = 12)
+
+```
+
+```{r}
+plot(Month_Temperature_TS)
+```
+
+La funzione "decopose" decompone la time series in 3 componenti (che riproducono la TS originale se sommate; si può anche suppore che invece le componenti vadano moltiplicate): una periodica, una trend e una casuale. Si può pensare alla terza come all'errore che si ottiene in quest'operazione. 
+
+```{r}
+TS_dec<-decompose(Month_Temperature_TS)
+```
+
+Ecco la componente stagionale per primi 3 anni. Si possono riconoscere le diverse stagioni inverno-primavera-estate-autunno
+
+```{r}
+plot(TS_dec$seasonal[0:36],type = "b")
+```
+
+Ecco il trend, che è la componente che ci interessa 
+
+```{r}
+plot(TS_dec$trend,type = "l")
+```
+
+E infine l'errore: non deve avere periodicità ne trend (deve essere simile al segnale prodotto dalla televisione quando staccate il cavo antenna, un white noise)
+
+```{r}
+plot(TS_dec$random,type = "l")
+```
+
+
+
+Come posso testare se siamo davvero in presenza di una serie storica completamente casuale (white noise) oppure se vi è una certa correlazione fra i dati ? Per esempio guardo l'autocorrelazione 
+
+
+![Autocorrelation](Pic/Autocorrelation.png)
+
+
+```{r}
+acf(na.omit(TS_dec$random), lag.max = 1000)
+```
+
+Le linee blu indicano il livello per cui l'autocorrelazione è significativa, come si può dunque notare l'errore non è completamente causale. Questo vuol dire che manca qualcosa nel modello che abbiamo usato (la stagionalità precedente). Nell'ambito delle serie storiche ci sono dei modelli appositi per effettuare un fit....(magari ne vedremo un accenno nelle prossime lezioni)
+
+
+# AMOC (Capovolgimento meridionale della circolazione atlantica)
+
+Usiamo i dati di Caesar et al. 2021
+
+```{r}
+library(aTSA)
+library(funtimes)
+AMOC <- read.csv("~/GitHub/Climate_Change_tutorial/Data/AMOC.csv", sep=";")
+colnames(AMOC) <- c("Year","AMOC","lower","upper")
+```
+
+
+```{r}
+AMOC_TS <- ts(AMOC$AMOC,frequency=1)
+plot(AMOC_TS)
+```
+
+```{r}
+notrend_test(AMOC_TS)
+linear.model_FIRST <- lm(AMOC ~ Year,data = AMOC[0:70,]) 
+summary(linear.model_FIRST)
+linear.model_SECOND <- lm(AMOC ~ Year,data = AMOC[70:146,]) 
+summary(linear.model_SECOND)
+```
+
+
+
+
+
+
+

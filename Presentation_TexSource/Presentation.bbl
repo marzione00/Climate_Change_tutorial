@@ -36,5 +36,9 @@
   \entry{overview}{misc}{}
     \field{howpublished}{\url{https://www.nature.com/articles/453291a.pdf}}
   \endentry
+
+  \entry{AMOC}{misc}{}
+  \field{howpublished}{\url{https://www.scientificamerican.com/article/slow-motion-ocean-atlantics-circulation-is-weakest-in-1-600-years/}}
+  \endentry
 \enddatalist
 \endinput
